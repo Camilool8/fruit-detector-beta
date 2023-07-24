@@ -16,7 +16,7 @@ function App() {
 
   const getToken = async () => {
     const response = await axios.post(
-      "http://cjoga.dyndns-server.com:5000/login",
+      "https://cjoga.dyndns-server.com:5000/login",
       {
         email: "cjoga@example.com",
         password: "12qw12qw12qw",
@@ -40,7 +40,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await axios.post(
-        "http://cjoga.dyndns-server.com:5000/predict",
+        "https://cjoga.dyndns-server.com:5000/predict",
         formData,
         {
           headers: {
